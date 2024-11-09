@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --silk: #eee5d9;
+  --champagne: #d2b68a;
+  --marble: #1d2a44;
+  --onyx: #b17a6d;
+  --velvet: #222d52;
+  --pearl: #f9f8f6;
+}
+
+@layer base {
+  body {
+    @apply bg-pearl text-marble;
+  }
+}
+
+.prose h1,
+.prose h2,
+.prose h3 {
+  @apply text-marble;
+}
+
+.blog-card {
+  transition: transform 0.3s ease-in-out;
+}
+
+.blog-card:hover {
+  transform: translateY(-4px);
+}
